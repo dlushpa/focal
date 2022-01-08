@@ -1,0 +1,51 @@
+@import 'normalize.css';
+@import 'burger.css';
+@import 'modal.css';
+@import 'intro.css';
+@import 'header.css';
+@import 'second-intro.css';
+@import 'about-me.css';
+@import 'my-skills.css';
+@import 'resume.css';
+@import 'my-education.css';
+@import 'work-experience.css';
+@import 'carusel-block.css';
+@import 'portfolio.css';
+@import 'contact.css';
+@import 'footer.css';
+
+body{
+    background-color: #f2f2f1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    
+}
+a{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;    
+}
+
+button{
+    outline: none;
+}
+
+p,
+section{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1600px; 
+
+}
+
+
