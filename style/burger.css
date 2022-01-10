@@ -37,9 +37,8 @@
     bottom: 30px;
     left: 200px;
     padding: 20px;
+    cursor: pointer;
 }
-
-
 
 .burger_menu{
     cursor: pointer;
@@ -56,8 +55,6 @@
     background-color:#fff;
     position: absolute;
     top: 12px;
-    
-
 }
 
 .burger_menu>span:before,
@@ -80,13 +77,13 @@
     transition: 0.5s;
     transform: rotate(-45deg);
 }
+
 .burger_close-item>span:nth-child(2){
     transform: rotate(45deg);
 }
 
 .burger_block-active{
-    transform: translateX(0);
-    
+    transform: translateX(0);  
 }
 
 .burger{
@@ -96,8 +93,6 @@
     opacity: .7;
     cursor: pointer;
 }
-
-
 
 .burger_menu>span:before{
     transform: translateY(-7px);

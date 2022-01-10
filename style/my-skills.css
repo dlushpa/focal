@@ -38,6 +38,7 @@
     color: #2ecc71;
     border: 2px solid #2ecc71;
     padding: 15px 34px;
+    cursor: pointer;
 }
 .my-skills__btn:hover{
     color: #a6f3c6;

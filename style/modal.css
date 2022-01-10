@@ -2,30 +2,26 @@
 
 .modal__wrapper{
     display: none;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 30px;
+    margin: 15em auto ;
+    
+    
     max-width: 500px;
     width: 100%;
-    
-    
+
     position: fixed;
     z-index: 100;
-    overflow: auto;
-    background-color: #fff;
+    overflow: visible;
+    
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    
-
 }
 
 .close{
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: 700;
     cursor: pointer;
     padding-left: 10px;
@@ -52,6 +48,7 @@
 
 .modal__img{
     width: 100%;
+    border-radius: 10px;
 }
 
     
