@@ -1,0 +1,146 @@
+.nav__mobile{
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    flex-direction: column;
+    display: none;
+    align-items: center;
+}
+
+.nav__mobile-active{
+    display: none;
+}
+
+
+.burger_block{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.7;
+    width: 30%;
+    height: 100%;
+    padding: 50px;
+    margin: 0;
+    transform: translateX(100%);
+    transition: .5s ease-in;
+}
+
+.burger_close-active{
+    display: block;
+}
+
+.burger_close{
+    position: relative;
+    bottom: 30px;
+    left: 200px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.burger_menu{
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.burger_menu>span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color:#fff;
+    position: absolute;
+    top: 12px;
+}
+
+.burger_menu>span:before,
+.burger_menu>span:after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color:#fff;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.burger_close-item>span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color:#fff;
+    position: absolute;
+    transition: 0.5s;
+    transform: rotate(-45deg);
+}
+
+.burger_close-item>span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.burger_block-active{
+    transform: translateX(0);  
+}
+
+.burger{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #000;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.burger_menu>span:before{
+    transform: translateY(-7px);
+}
+.burger_menu>span:after{
+    transform: translateY(7px);
+}
+.burger_menu-active>span{
+    height: 0;
+}
+.burger_menu-active>span::before{
+    transform: rotate(-45deg);
+}
+.burger_menu-active>span:after{
+    transform: rotate(45deg);
+}
+
+.burger_close-item>span:before{
+    transform: rotate(45deg);
+}
+
+
+
+
+@media screen and (max-width:920px) {
+    .burger{
+        display: block;
+        
+    }
+    .nav__mobile{
+        display: flex;
+    }
+    
+    .burger_block{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .burger_block{
+        font-size: 25px;
+    }
+}
+
+.burger-active{
+    display: none;
+}
+
+.header__logo-block-active{
+    display: none;
+}

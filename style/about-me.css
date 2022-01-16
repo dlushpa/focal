@@ -1,0 +1,140 @@
+.about-me{
+    display: flex;
+    
+    max-height: 754px;
+    padding-top: 60px;
+}
+
+.about-me__photo{
+    max-width: 610px;
+    width: 100%;
+    display: block;
+}
+
+.about-me__info{
+    background-color: #cfcfcf;
+    padding: 100px 200px 0 100px;
+}
+
+.about-me__title{
+    color: #566366;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.about-me__subtitle{
+    color: #919191;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-me__skills{
+    padding-top: 74px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+.about-me__skills-items{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+}
+
+.about-me__skills-logo{
+    width: 41px;
+    height: 41px;
+}
+
+.about-me__skills-wrapper{
+    padding-left: 25px;
+}
+.about-me__skills-title{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #566366;
+}
+.about-me__skills-subtitle{
+    color: #919191;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-me__preview{
+    position: relative;
+    width: 100%;
+    max-width: 610px;
+    max-height: 694px;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1540px){
+    
+    .about-me__info{
+        padding: 20px 30px;
+    }
+    .about-me__skills{
+        justify-content: space-around;
+    }
+    
+}
+    
+
+@media screen and (max-width:1080px){
+    .about-me__skills{
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .about-me{
+        max-height: inherit;
+    }
+    .about-me__photo{
+        position: sticky;
+        top: 0;
+    }
+    .about-me__preview{
+        overflow: initial;
+        max-height: initial;
+    }
+}
+@media screen and (max-width:768px){
+    .about-me__preview{
+        min-width: 150px;
+    }
+    .about-me__title{
+        padding-bottom: 10px;
+    }
+    .about-me__subtitle{
+        font-size: 16px;
+        margin: 0;
+    }
+    .about-me__skills-logo{
+        width: 20px;
+        height: 20px;
+    }
+    .about-me__skills-wrapper{
+        padding-left: 10px;
+    }
+    .about-me__skills-subtitle{
+        margin: 5px 0 16px;
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width:480px){
+    .about-me__skills-items{
+        flex-direction: column;
+    }
+    .about-me__skills-wrapper{
+        padding-left: 0;
+    }
+    .about-me__skills-logo{
+        margin-bottom: 5px;
+    }
+    .about-me__info{
+        padding: 14px;
+    }
+}
